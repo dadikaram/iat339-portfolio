@@ -1,0 +1,132 @@
+body {
+  font-family: quasimoda, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Questrial', sans-serif;
+}
+
+h2 {
+  font-family: mr-eaves-xl-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: mr-eaves-xl-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 {
+  font-family: mr-eaves-xl-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div {
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid #353535;
+  border-radius: 5px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-family: quasimoda, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+#styleguide-desc {
+
+}
+
+a {
+  text-decoration: none;
+  color: #507A69;
+}
+
+a:hover {
+  color: #63C29C;
+  font-style: italic;
+}
+
+a:focus {
+  border: 1px #63C29C solid;
+}
+
+.nav-link {
+  margin-right: 2rem;
+}
+
+ul, ol {
+/* padding-inline-start: 0; */
+}
+
+hr {
+  border: 1px dashed lightgray;
+  border-radius: 5px;
+}
+
+.element-section{
+  margin: 2rem 0.5rem;
+}
+
+.styleguide-rendered {
+  padding: 1rem;
+  display: inline-block;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.img-link img:hover {
+  border: 2px solid red;
+}
+
+#grids .styleguide-rendered {
+  display: block;
+}
+.styleguide-rendered section {
+}
+
+.grid-container {
+  display: flex;
+}
+.grid-content {
+  width: auto;
+  display: inline-block;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.offgrid-a {
+  width: 33.33%;
+}
+
+.offgrid-b {
+  width: 66.66%;
+}
+
+
+
+
+/* PROJECT PAGES */
+#content-nav {
+  position: fixed;
+}
+
+#content-nav a {
+  display: block;
+}

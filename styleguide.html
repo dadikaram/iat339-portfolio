@@ -10,71 +10,405 @@
 	<!-- Website Tab Icon -->
 	<link rel="icon" href="img/sq_logo.png" type="image/png">
 
-	<!-- Linked Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
-
 	<!-- Linked Style Sheets -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/roz6gvz.css">
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
 
 	<!-- JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/logic.js"></script>
 </head>
+
 <body>
-	<section id="styleguide-desc">
+
+	<div id="styleguide-desc">
 		<h1>Portfolio Styleguide</h1>
 		<nav class="sg-nav">
-			<a href="#textstyling">Text Styling</a>
-			<a href="#imagestyling">Image Styling</a>
-			<a href="#interactive">Interactive Elements</a>
-			<a href="#combined">Combined Elements</a>
+			<a href="#textstyling" class="nav-link">Text Styling</a>
+			<a href="#imagestyling" class="nav-link">Image Styling</a>
+			<a href="#interactive" class="nav-link">Interactive Elements</a>
+			<a href="#combined" class="nav-link">Combined Elements</a>
+			<a href="#grids" class="nav-link">Content Grids</a>
 		</nav>
-	</section> <!-- end container section -->
-	<section id="textstyling">
+	</div>
+
+	<div id="textstyling">
 		<h2>Text Styling</h2>
-		<section>
+		<section class="element-section">
 			<h3>Headings</h3>
 			<h4>CSS Selector</h4>
 			<p>h1, h2, h3, h4 element tags</p>
 			<h4>Sample Code</h4>
-			<code><h1>Heading Level 1</h1></code>
+			<code>&lt;h1&gt;Heading Level 1&lt;/h1&gt;</code>
 			<h4>Rendered Element</h4>
-			<h1>Heading Level 1</h1>
-			<h2>Heading Level 2</h2>
-			<h3>Heading Level 3</h3>
-			<h4>Heading Level 4</h4>
-		</section> <!-- END sg-subsection -->
+			<section class="styleguide-rendered">
+				<h1>HEADING Level 1</h1>
+				<h2>HEADING Level 2</h2>
+				<h3>HEADING Level 3</h3>
+				<h4>HEADING Level 4</h4>
+			</section>
+		</section>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat quam gravida velit bibendum vehicula eget congue ipsum. In ultricies tristique urna, sit amet blandit augue porttitor elementum. Ut hendrerit dictum ante posuere pretium. Praesent ultrices ipsum eu faucibus luctus.</p>
-	</section>
-	<section id="imagestyling">
+		<hr>
+
+		<section class="element-section">
+			<h3>Paragraphs</h3>
+			<h4>CSS Selector</h4>
+			<p>p element tags</p>
+			<h4>Sample Code</h4>
+			<code>&lt;p&gt;Lorem ipsum&lt;/p&gt;</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat quam gravida velit bibendum vehicula eget congue ipsum. In ultricies tristique urna, sit amet blandit augue porttitor elementum. Ut hendrerit dictum ante posuere pretium. Praesent ultrices ipsum eu faucibus luctus.</p>
+			</section>
+		</section>
+
+		<hr>
+
+		<section class="element-section">
+			<h3>Lists</h3>
+			<h4>CSS Selector</h4>
+			<p>ul + ol element tags</p>
+			<h4>Sample Code</h4>
+			<code>&lt;ul&gt;Unordered List
+				&lt;li&gt;List Item&lt;/li&gt;&lt;ul&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<ul>Unordered List
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+
+				<ol>Ordered List
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ol>
+			</section>
+		</section>
+	</div>
+
+	<div id="imagestyling">
 		<h2>Image Styling</h2>
-		<h3>Figure<h3>
-		<h3>Figure with Caption<h3>
-		<h3>2 column<h3>
-		<h3>3 column<h3>
-		<h3>4 column<h3>
-	</section>
+		<section class="element-section">
+			<h3>Image</h3>
+			<h4>CSS Selector</h4>
+			<p>img element tag</p>
+			<h4>Sample Code</h4>
+			<code>&lt;img src="img/image.png" alt="Alternate text"/&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<img src="img/filler-180.png" alt="Filler image of 180px by 200px">
+			</section>
+		</section>
 
+		<hr>
 
-	<section id="interactive">
+		<section class="element-section">
+			<h3>Figure with Caption</h3>
+			<h4>CSS Selector</h4>
+			<p>figure + figcaption element tags</p>
+			<h4>Sample Code</h4>
+			<code>&lt;figure&gt;
+				<br>&lt;img src="img/image.png" alt="Alternate text"&gt;
+				<br>&lt;figcaption&gt;Image caption&lt;figcaption&gt;
+				<br>&lt;/figure&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<figure>
+					<img src="img/filler-180.png" alt="Filler image of 180px by 200px">
+					<figcaption>Figure caption looks like this</figcaption>
+				</figure>
+			</section>
+		</section>
+	</div>
+
+	<div id="interactive">
 		<h2>Interactive Elements</h2>
-		in text link
-		<button>Button</button>
-		<label>Label</label>
-		forms
-	</section>
+		<section class="element-section">
+			<h3>In-Text Link</h3>
+			<h4>CSS Selector</h4>
+			<p>a element tag</p>
+			<h4>Sample Code</h4>
+			<code>&lt;p&gt;&lt;a href="/index.html"&gt;&lt;p&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<p>This is an <a href="/index.html">in-text link</a>.</p>
+			</section>
+		</section>
 
+		<hr>
 
-	<section id="combined">
+		<section class="element-section">
+			<h3>Navigation</h3>
+			<h4>CSS Selector</h4>
+			<p>.nav-link</p>
+			<h4>Sample Code</h4>
+			<code>&lt;nav&gt;&lt;a href="/index.html" class="nav-link"&gt;Home&lt;a&gt;&lt;/nav&gt;</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<nav>
+					<a href="/index.html" class="nav-link">Home</a>
+				</nav>
+			</section>
+		</section>
+
+		<hr>
+
+		<section class="element-section">
+			<h3>Button</h3>
+			<h4>CSS Selector</h4>
+			<p>button element tag</p>
+			<h4>Sample Code</h4>
+			<code>&lt;button&gt;Button&lt;/button&gt;</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<button>Button</button>
+			</section>
+		</section>
+
+		<section class="element-section">
+			<h3>Text Input Field with a Label</h3>
+			<h4>CSS Selector</h4>
+			<p>.form-label, .text-input</p>
+			<h4>Sample Code</h4>
+			<code>&lt;form&gt;
+				<br>&lt;label for="firstname" class="form-label"&gt;First Name&lt;/label&gt;
+				<br>&lt;input class="text-input" type="text" id="firstname" name="firstname"&gt;
+				<br>&lt;/form&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<label for="firstname" class="form-label">First Name</label><br>
+				<input type="text" class="text-input" id="firstname" name="firstname">
+			</section>
+		</section>
+
+		<hr>
+
+		<section class="element-section">
+			<h3>Radio Button with Label</h3>
+			<h4>CSS Selector</h4>
+			<p>.radio-input</p>
+			<h4>Sample Code</h4>
+			<code>&lt;form&gt;
+				<br>&lt;input type="radio" id="red" name="colour" value="red"&gt;
+				<br>&lt;label for="red"&gt;Red&lt;/label&gt;
+				<br>&lt;/form&gt;
+			</code>
+				<h4>Rendered Element</h4>
+				<section class="styleguide-rendered">
+					<input type="radio" id="red" name="colour" value="red">
+					<label for="red">Red</label>
+				</section>
+		</section>
+	</div>
+
+	<div id="combined">
 		<h2>Combined Elements</h2>
-		navigation
-		gallery
-		image link
-	</section>
+		<section class="element-section">
+			<h3>Navigation</h3>
+			<h4>CSS Selector</h4>
+			<p>.main-nav, .nav-link</p>
+			<h4>Sample Code</h4>
+			<code>&lt;nav class="main-nav"&gt;
+				<br>&lt;a href="index.html"&gt;Home&lt;/a&gt;
+				<br>&lt;/nav&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<nav class="main-nav">
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="about.html" class="nav-link">About + Contact</a>
+					<a href="project-1.html" class="nav-link">Project 1</a>
+					<a href="project-2.html" class="nav-link">Project 2</a>
+					<a href="other-work.html" class="nav-link">Other Work</a>
+				</nav>
+			</section>
+		</section>
 
+		<hr>
+
+		<section class="element-section">
+			<h3>Form</h3>
+			<h4>CSS Selector</h4>
+			<p>.form</p>
+			<h4>Sample Code</h4>
+			<code>&lt;form&gt;
+				<br>&lt;label for="firstname" class="form-label"&gt;First Name&lt;/label&gt;
+				<br>&lt;input type="text" class="text-input id="firstname" name="firstname"&gt;
+				<br>&lt;button&gt;Submit&lt;/button&gt;
+				<br>&lt;/form&gt;</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<form>
+					<label for="firstname" class="form-label">First Name</label><br>
+					<input type="text" class="text-input" id="firstname" name="firstname">
+					<br><input type="radio" id="red" name="colour" value="red">
+					<label for="red">Red</label><br>
+					<button>Submit</button>
+				</form>
+			</section>
+		</section>
+
+		<hr>
+
+		<section class="element-section">
+			<h3>Image as Link</h3>
+			<h4>CSS Selector</h4>
+			<p>.img-link</p>
+			<h4>figure</h4>
+			<code>
+				&lt;figure class="img-link"&gt;
+				<br>&lt;a href="" target="_blank"&gt;&lt;img src="img/filler-180.png" alt="Filler image of 180px by 200px"&gt;&lt;/a&gt;
+				<br>&lt;/figure&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<figure class="img-link">
+					<a href="" target="_blank"><img src="img/filler-180.png" alt="Filler image of 180px by 200px"></a>
+				</figure>
+			</section>
+		</section>
+
+		<hr>
+
+		<section class="element-section">
+			<h3>Image Gallery/Switch</h3>
+			<h4>CSS Selector</h4>
+			<p>.gallery</p>
+			<h4>Sample Code</h4>
+			<code>&lt;figure&gt;
+				<br>&lt;img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery"&gt;
+				<br>&lt;figcaption>
+					<br>&lt;button id="img1" onclick="switchImage('one')"&gt;1&lt;/button&gt;
+					<br>&lt;button id="img2" onclick="switchImage('two')"&gt;2&lt;/button&gt;
+					<br>&lt;button id="img3" onclick="switchImage('three')"&gt;3&lt;/button&gt;
+				<br>&lt;/figcaption&gt;
+				<br>&lt;/figure&gt;</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<figure>
+					<img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery">
+					<figcaption>
+						<button id="img1" onclick="switchImage('one')">1</button>
+						<button id="img2" onclick="switchImage('two')">2</button>
+						<button id="img3" onclick="switchImage('three')">3</button>
+					</figcaption>
+				</figure>
+			</section>
+		</section>
+	</div>
+
+	<div id="grids">
+		<h2>Content Grids</h2>
+		<section class="element-section">
+			<h3>2-Column Grid</h3>
+			<h4>CSS Selector</h4>
+			<p>.grid-container, .grid-content, .2a, .2b</p>
+			<h4>Sample Code</h4>
+			<code>
+				&lt;section class="grid-container"&gt;
+				<br><br>&lt;figure class="grid-content 2a"&gt;
+				<br>...
+				<br>&lt;/figure&gt;
+				<br><br>&lt;figure class="grid-content 2b"&gt;
+				<br>...
+				<br>&lt;/figure&gt;
+				<br><br>&lt;/section&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<section class="grid-container">
+					<figure class="grid-content 2a">
+						<img src="img/filler-200.png" alt="Filler image of 200px by 200px">
+					</figure>
+					<figure class="grid-content 2b">
+						<img src="img/filler-200.png" alt="Filler image of 200px by 200px">
+					</figure>
+				</section>
+			</section>
+		</section>
+
+		<hr>
+
+		<section class="element-section">
+			<h3>3-Column Grid</h3>
+			<h4>CSS Selector</h4>
+			<p>.grid-container, .grid-content, .3a, .3b, .3c</p>
+			<h4>Sample Code</h4>
+			<code>
+				&lt;section class="grid-container"&gt;
+				<br><br>&lt;section class="grid-content 3a"&gt;
+					<br>...
+				<br>&lt;/section&gt;
+				<br><br>&lt;section class="grid-content 3b"&gt;
+					<br>...
+				<br>&lt;/section&gt;
+				<br><br>&lt;section class="grid-content 3c"&gt;
+					<br>...
+				<br>&lt;/section&gt;
+				<br><br>&lt;/section&gt;</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<section class="grid-container">
+					<section class="grid-content 3a">
+						<h2>TITLE1</h2>
+						<p>Lorem Ipsum</p>
+					</section>
+					<section class="grid-content 3b">
+						<h2>TITLE2</h2>
+						<p>Lorem Ipsum</p>
+					</section>
+					<section class="grid-content 3c">
+						<h2>TITLE3</h2>
+						<p>Lorem Ipsum</p>
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<hr>
+
+		<section class="element-section">
+			<h3>Uneven Grid</h3>
+			<h4>CSS Selector</h4>
+			<p>.grid-container, .grid-content, .offgrid, .offgrid-a, .offgrid-b</p>
+			<h4>Sample Code</h4>
+			<code>
+				&lt;section class="grid-container offgrid"&gt;
+				<br><br>&lt;figure class="grid-content offgrid-a"&gt;
+					<br>...
+				<br>&lt;/figure&gt;
+				<br><br>&lt;section class="grid-content offgrid-b"&gt;
+					<br>...
+				<br>&lt;/section&gt;
+				<br><br>&lt;/section&gt;
+			</code>
+			<h4>Rendered Element</h4>
+			<section class="styleguide-rendered">
+				<section class="grid-container offgrid">
+					<figure class="grid-content offgrid-a">
+						<img src="img/filler-200.png" alt="Filler image of 200px by 200px">
+					</figure>
+					<section class="grid-content offgrid-b">
+						<h2>TITLE1</h2>
+						<p>Lorem Ipsum</p>
+					</section>
+				</section>
+			</section>
+		</section>
+	</div>
 
 </body>
 </html>
