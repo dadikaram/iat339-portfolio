@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Website Tab Title -->
+	<title>Project</title>
+
+	<!-- Website Tab Icon -->
+	<link rel="icon" href="img/sq_logo.png" type="image/png">
+
+	<!-- Linked Style Sheets -->
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/roz6gvz.css">
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/logic.js"></script>
+</head>
+
+<body>
+  <header>
+		<nav class="main-nav">
+			<a href="index.html" class="nav-link">Home</a>
+			<a href="about.html" class="nav-link">About + Contact</a>
+			<a href="project-1.html" class="nav-link">Project 1</a>
+			<a href="project-2.html" class="nav-link">Project 2</a>
+			<a href="other-work.html" class="nav-link">Other Work</a>
+		</nav>
+  </header>
+
+
+	<nav id="content-nav">
+	  <a href="#ideation">Ideation</a>
+	  <a href="#prototype">Prototype</a>
+	  <a href="#final">Final Delivery</a>
+	  </nav>
+
+<div id="page-header" class="grid-container">
+  <h2>NOTETEACHER</h2>
+  <section class="proj-desc grid-content 2a">
+		<p>For IAT 267: Introduction to Technological Systems, my team and I were tasking with creating an interactive system using sensors, an Arduino microcontroller and Processing for programming. Through this project, I was able to develop my programming competency and my problem-solving skills and learned how to assess my own skillsets in order to set deadlines and milestones.</p>
+  </section>
+  <figure class="proj-img grid-content 2b"><img src="img/noteteacher_final.png" >
+  </figure>
+</div>
+
+<div>
+  <section id="ideation" class="grid-container">
+		<h3>IDEATION</h3>
+		<figure>
+			<img src="img/nt-mindmap1.png" alt="Filler image of 200px by 200px" class="gallery">
+			<figcaption>
+				<button id="img1" onclick="ntIdeationSwitch('one')">1</button>
+				<button id="img2" onclick="ntIdeationSwitch('two')">2</button>
+			</figcaption>
+		</figure>
+    <p class="grid-content 2b">Based on the assignment brief and suggested topics, we ideated on possible projects. We decided to emulate a sort of MIDI device, designed to teach children various sounds based on an environment sensor. Though we initially felt we should teach animal sounds, we eventually moved onto teaching musical notes and various instrument sounds. This would allow us greater access to resources, such as sound bytes, and would not limit us in choosing our target group. We planned to use 12 touch sensors, as well as either two potentiometers.</p>
+  </section>
+
+  <section id="prototype">
+		<h3>PROTOTYPING</h3>
+		<section class="grid-container">
+		<h4>MILESTONE 1</h4>
+    <figure class="grid-content 2a"><img src="img/nt_milestone1.png"></figure>
+    <p class="grid-content 2b">Our first milestone was to successfully use a touch sensor to trigger both a sound, using the Minim library, as well as an interface change in Processing.</p>
+		</section>
+		<section class="grid-container">
+		<h4>MILESTONE 2</h4>
+		<figure class="grid-content 2a"><img src="img/nt_milestone2.png"></figure>
+    <p class="grid-content 2b">Our next milestone was to successfully connect to three sensors, each of which would prompt a different sound and interface change.</p>
+		</section>
+		<section class="grid-container">
+			<h4>MILESTONE 3</h4>
+		<figure class="grid-content 2a"><img src="img/nt_milestone3.png"></figure>
+    <p class="grid-content 2b">The next milestone, and final major milestone before expanding to our full set of sensors was to incorporate one of our potentiometers, and to map its value to a variable in Processing. Based on the value, the system would switch to one of three instrument modes.</p>
+		</section>
+  </section>
+
+  <section id="final" class="grid-container">
+		<h3>FINAL DELIVERABLE</h3>
+    <figure class="grid-content 2a"><img src="img/nt_milestone4.png"></figure>
+    <p class="grid-content 2b">As we already knew we had the capability to add potentiometers, we chose to add our second potentiometer at this stage. For this potentiometer, the value was mapped to a 100 scale for the volume of the device, which then changed the corresponding volume slider on the interface. In order to expand to 12 touch sensors successfully, as well as to add our potentiometers, we needed to clearly mark and organize our circuits and wires, as well as create a body for the system. As one of our final steps, we also finalized our interface design at this stage.</p>
+  </section>
+</div>
+
+</body>
+</html>

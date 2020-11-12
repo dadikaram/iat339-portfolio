@@ -76,7 +76,7 @@
 			<p>ul + ol element tags</p>
 			<h4>Sample Code</h4>
 			<code>&lt;ul&gt;Unordered List
-				&lt;li&gt;List Item&lt;/li&gt;&lt;ul&gt;
+				&lt;li&gt;List Item&lt;/li&gt;&lt;/ul&gt;
 			</code>
 			<h4>Rendered Element</h4>
 			<section class="styleguide-rendered">
@@ -119,7 +119,7 @@
 			<h4>Sample Code</h4>
 			<code>&lt;figure&gt;
 				<br>&lt;img src="img/image.png" alt="Alternate text"&gt;
-				<br>&lt;figcaption&gt;Image caption&lt;figcaption&gt;
+				<br>&lt;figcaption&gt;Image caption&lt;/figcaption&gt;
 				<br>&lt;/figure&gt;
 			</code>
 			<h4>Rendered Element</h4>
@@ -139,7 +139,7 @@
 			<h4>CSS Selector</h4>
 			<p>a element tag</p>
 			<h4>Sample Code</h4>
-			<code>&lt;p&gt;&lt;a href="/index.html"&gt;&lt;p&gt;
+			<code>&lt;p&gt;&lt;a href="/index.html"&gt;&lt;/p&gt;
 			</code>
 			<h4>Rendered Element</h4>
 			<section class="styleguide-rendered">
@@ -154,7 +154,7 @@
 			<h4>CSS Selector</h4>
 			<p>.nav-link</p>
 			<h4>Sample Code</h4>
-			<code>&lt;nav&gt;&lt;a href="/index.html" class="nav-link"&gt;Home&lt;a&gt;&lt;/nav&gt;</code>
+			<code>&lt;nav&gt;&lt;a href="/index.html" class="nav-link"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>
 			<h4>Rendered Element</h4>
 			<section class="styleguide-rendered">
 				<nav>
@@ -270,13 +270,13 @@
 			<h4>figure</h4>
 			<code>
 				&lt;figure class="img-link"&gt;
-				<br>&lt;a href="" target="_blank"&gt;&lt;img src="img/filler-180.png" alt="Filler image of 180px by 200px"&gt;&lt;/a&gt;
+				<br>&lt;a href="https://www.google.ca/" target="_blank"&gt;&lt;img src="img/filler-180.png" alt="Filler image of 180px by 200px"&gt;&lt;/a&gt;
 				<br>&lt;/figure&gt;
 			</code>
 			<h4>Rendered Element</h4>
 			<section class="styleguide-rendered">
 				<figure class="img-link">
-					<a href="" target="_blank"><img src="img/filler-180.png" alt="Filler image of 180px by 200px"></a>
+					<a href="https://www.google.ca/" target="_blank"><img src="img/filler-180.png" alt="Filler image of 180px by 200px"></a>
 				</figure>
 			</section>
 		</section>
@@ -396,11 +396,10 @@
 				<br><br>&lt;/section&gt;
 			</code>
 			<h4>Rendered Element</h4>
-			<section class="styleguide-rendered">
+			<section class="styleguide-rendered sp">
 				<section class="grid-container offgrid">
-					<figure class="grid-content offgrid-a">
-						<img src="img/filler-200.png" alt="Filler image of 200px by 200px">
-					</figure>
+					<section class="grid-content offgrid-a">
+					</section>
 					<section class="grid-content offgrid-b">
 						<h2>TITLE1</h2>
 						<p>Lorem Ipsum</p>
