@@ -1,0 +1,118 @@
+.page-header {
+  width: 100;
+  height: 60vh;
+  margin: 0;
+  background-position: right;
+  background-size: cover;
+}
+
+#coco-header{
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url("../img/coco_landing3.png");
+}
+
+#nt-header {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url("../img/noteteacher_final2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header h2 {
+  padding-top: 5%;
+  padding-left: 0;
+  margin-left: 10%;
+  font-size: 3rem;
+  color: #000000;
+}
+
+#coco-header h2 {
+  color: #ffffff;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 10%;
+  max-width: 80%;
+}
+
+.proj-desc {
+  float: left;
+  margin-top: 2%;
+  margin-left: 10%;
+  padding: 0.1rem;
+  max-width: 40%;
+  background-color:rgba(255,255,255,0.35);
+  border-radius: 5px;
+}
+
+.proj-desc p {
+  padding: 2rem 2.5rem;
+}
+
+div section {
+  margin-bottom: 10rem;
+}
+
+figure {
+  max-width: 100%;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #000000;
+}
+
+#content-nav {
+  display: none;
+  width: 15%;
+  opacity: 0.8;
+  margin-top: 5%;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  background-color: #1f1d23;
+  color: #ffffff;
+}
+
+/*
+#art-direction figure.grid-content{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#art-direction section.grid-content, #animatic section.2b {
+  background-color: #1f1d23;
+  color: #ffffff;
+  margin: 0;
+}
+
+#storyboards, #animatic, #final {
+  height: 100%;
+}
+
+section.2a {
+  background-color: #1f1d23;
+  color: #ffffff;
+}
+*/
+
+#prototype h3 {
+  padding-left: 0;
+}
+
+iframe {
+  width: 40vw;
+  height: 30vh;
+}
+
+.grid-container h4 {
+  /* margin-left: -16%; */
+}

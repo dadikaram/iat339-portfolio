@@ -1,0 +1,26 @@
+div {
+  padding: 0;
+  margin: 0;
+}
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/background-image.jpg");
+  background-position:center;
+  background-size: cover;
+}
+
+#landinglogo {
+  margin: 0 0 25% 25%;
+  width:50%;
+  padding-top: 33.33vh; /* 25 for larger screens? */
+  /* left: 25%;
+  right: 25%; */
+}
+
+#landinglogo img{
+  max-width: 100%;
+  margin: 0;
+}

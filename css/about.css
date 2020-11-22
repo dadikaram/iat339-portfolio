@@ -1,0 +1,32 @@
+body {
+}
+
+div {
+  padding: 0;
+  margin: 0;
+  /* width: 100%; */
+  /* max-width: 100%; */
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+div section.grid-content {
+  padding: 2rem 0rem;
+}
+
+.grid-content p {
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.sm {
+  background-color: #1f1d23;
+  color: #ffffff;
+}
+
+.sm a {
+  margin: 2rem 0 0 3rem;
+}

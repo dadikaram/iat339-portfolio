@@ -1,44 +1,117 @@
 <!DOCTYPE html>
-<html lang="en-UK">
+<html lang="en-GB">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Website Tab Title -->
-		<title>Home</title>
+		<title>Home | Dinuki Adikaram</title>
 
 		<!-- Website Tab Icon -->
-		<link rel="icon" href="img/sq_logo.png" type="image/png">
+		<link rel="icon" href="img/logo_wh_sq.png" type="image/png">
 
 		<!-- Linked Style Sheets -->
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/dbn5ijw.css">
+		<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
 
 		<!-- JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	  	<script src="js/logic.js"></script>
 	</head>
   <body>
-		<header>
-			<nav class="main-nav">
-				<nav class="main-nav">
-					<a href="index.html" class="nav-link">Home</a>
-					<a href="about.html" class="nav-link">About + Contact</a>
-					<a href="project-1.html" class="nav-link">Project 1</a>
-					<a href="project-2.html" class="nav-link">Project 2</a>
-					<a href="other-work.html" class="nav-link">Other Work</a>
-				</nav>
+		<header id="landing">
+			<figure id="landinglogo"><img src="img/logo_wh.png"></figure>
 		</header>
 
-		<div id="landing">
+		<!-- <div id="navigation"> -->
+			<nav class="main-nav">
+				<a href="index.html" class="nav-link">Home</a>
+				<a href="about.html" class="nav-link">About</a>
+				<a href="coco.html" class="nav-link">Coco's Island</a>
+				<a href="nt.html" class="nav-link">NoteTeacher</a>
+				<a href="personal.html" class="nav-link">Personal Work</a>
+			</nav>
+	<!-- </div> -->
+
+		<div id="mini-bio">
 			<h1>DINUKI ADIKARAM</h1>
 			<section class="grid-container">
-			<figure class="grid-content 2a"><img src="img/filler-200.png"</img></figure>
-			<p class="grid-content 2b">Hello there! I’m Dinuki, a user experience and media designer currently studying Interactive Arts and Technology at SFU. Both as a designer and as a ‘perpetual work-in-progress,’ I always strive for exploration and growth. Graphically, I deeply admire clean lines, geometric shapes, and organic patterns but find equal fascination in well-curated clutters and clusters. Since childhood, I’ve taken an interest in storytelling through art which I currently work to implement into my design work. My goal in my work is to thoroughly understand my users in order to design solutions that are intuitive and shine in contexts.</p>
+			<figure class="grid-content 2a"><img 	src="img/filler-200.png">
+			<figcaption><section class="sm">
+			<a class="twt" href="https://twitter.com/dracaramel"></a>
+			<a class="ig" href="https://www.instagram.com/dracaramel/"></a>
+		</section></figcaption>
+			</figure>
+			<section class="grid-content 2b">
+			<p>Hello there! I’m Dinuki, a user experience and media designer currently studying Interactive Arts and Technology at SFU. Both as a designer and as a ‘perpetual work-in-progress,’ I always strive for exploration and growth. Graphically, I deeply admire clean lines, geometric shapes, and organic patterns but find equal fascination in well-curated clutters and clusters. Since childhood, I’ve taken an interest in storytelling through art which I currently work to implement into my design work. My goal in my work is to thoroughly understand my users in order to design solutions that are intuitive and shine in contexts.</p>
+			</section>
 			</section>
 		</div>
 
+		<div id="projects-preview">
+			<section class="grid-container">
+				<section class="grid-content 2a"><p>DESC</p>
+				</section>
+				<figure class="grid-content 2b">
+					<img 	src="img/filler-200.png">
+				</figure>
+			</section>
+			<section class="grid-container">
+			<figure class="grid-content 2a"><img 	src="img/filler-200.png"></figure>
+			<section class="grid-content 2b">
+				<p>DESC</p>
+			</section>
+			</section>
+		</div>
 
+		<div id="other-works">
+			<section class="grid-container">
+			<figure class="grid-content 2a"><img 	src="img/filler-200.png"></figure>
+			<figure class="grid-content 2a"><img 	src="img/filler-200.png"></figure>
+			<figure class="grid-content 2a"><img 	src="img/filler-200.png"></figure>
+			<figure class="grid-content 2a"><img 	src="img/filler-200.png"></figure>
+			</section>
+		</div>
+
+		<footer>
+			<section id="footer-nav">
+				<h4>Navigation</h4>
+				<section class="grid-container">
+					<section class="grid-content 2a">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="coco.html">Coco</a>
+				<a href="nt.html">NoteTeacher</a>
+				<a href="personal.html">Personal Work</a>
+			</section>
+			<section class="grid-content 2b">
+				<a href="styleguide.html">Style Guide</a>
+				<a href="https://github.com/dadikaram/portfolio">GitHub</a>
+			</section>
+			</section>
+			</section>
+
+		<section id="footer-contact">
+			<h4>Contact</h4>
+			<a href="mailto:dadikara@sfu.ca">dadikara@sfu.ca</a>
+			<a href="mailto:adikaram.dinuki@gmail.com">adikaram.dinuki@gmail.com</a>
+			<a href="https://www.linkedin.com/in/dinuki-adikaram-ba8018173">LinkedIn</a>
+		</section>
+
+		<section id="footer-social">
+			<h4>Social Media</h4>
+			<a class="twt" href="https://twitter.com/dracaramel"></a>
+			<a class="ig" href="https://www.instagram.com/dracaramel/"></a>
+		</section>
+		</footer>
+
+		<div id="copyright">Portfolio © Dinuki Adikaram, 2020</div>
 
 	</body>
 </html>

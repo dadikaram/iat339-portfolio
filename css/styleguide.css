@@ -1,0 +1,20 @@
+div {
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid #353535;
+  border-radius: 5px;
+}
+
+.grid-content {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#copyright {
+  background-color: #507A69;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+}
