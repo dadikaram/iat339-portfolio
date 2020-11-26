@@ -5,6 +5,16 @@ div {
   border-radius: 5px;
 }
 
+
+div h2, div h3, div h4, p {
+  padding-left: 0rem;
+  margin: 1rem 0 1rem 0;
+}
+
+ul, ol {
+  margin-left: -1.33rem;
+}
+
 .grid-content {
   border: 1px solid grey;
   border-radius: 5px;

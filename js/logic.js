@@ -37,6 +37,63 @@ function ntIdeationSwitch(string){
   }
 }
 
+var currentImg = 0;
+
+function leftArrowClick(){
+  if(currentImg == 0){
+    currentImg = 2;
+  } else {
+    currentImg -= 1;
+  }
+}
+
+function rightArrowClick(){
+  if(currentImg == 2){
+    currentImg = 0;
+  } else {
+    currentImg += 1;
+  }
+}
+
+function changeGallery(g) {
+  currentImg = g;
+}
+
+function changeStyleGuideGallery(){
+  if(currentImg==0){
+  $('.gallery').attr('src','img/filler-200.png');
+  } else if(currentImg==1){
+    $('.gallery').attr('src','img/filler-200-red.png');
+  } else if(currentImg==2){
+    $('.gallery').attr('src','img/filler-200-blue.png');
+  }
+}
+
+function gallerySwitch(){
+  if(currentImg == 0){
+    $('#img1').removeClass('inactive');
+    $('#img1').addClass('active');
+    $('#img2').removeClass('active');
+    $('#img2').addClass('inactive');
+    $('#img3').removeClass('active');
+    $('#img3').addClass('inactive');
+  } else if(currentImg == 1){
+    $('#img1').removeClass('active');
+    $('#img1').addClass('inactive');
+    $('#img2').removeClass('inactive');
+    $('#img2').addClass('active');
+    $('#img3').removeClass('active');
+    $('#img3').addClass('inactive');
+  } else if (currentImg == 2) {
+    $('#img1').removeClass('active');
+    $('#img1').addClass('inactive');
+    $('#img2').removeClass('active');
+    $('#img2').addClass('inactive');
+    $('#img3').removeClass('inactive');
+    $('#img3').addClass('active');
+  }
+}
+
 
 
 

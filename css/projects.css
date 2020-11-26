@@ -116,3 +116,25 @@ iframe {
 .grid-container h4 {
   /* margin-left: -16%; */
 }
+
+@media screen and (max-width: 30rem){
+  div section {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width:40rem){
+  .page-header {
+    height: 40vh;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .proj-desc {
+    max-width: 80%;
+    /* margin-left: 0; */
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-ca">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 	<title>Style Guide | Dinuki Adikaram</title>
 
 	<!-- Website Tab Icon -->
-	<link rel="icon" href="img/logo_wh_sq.png" type="image/png">
+	<link rel="icon" href="img/logo_fixed_wh_sq.png" type="image/png">
 
 	<!-- Linked Style Sheets -->
 	<link href="css/normalize.css" rel="stylesheet">
@@ -258,7 +258,7 @@
 					<input type="text" class="text-input" id="firstname" name="firstname">
 					<br><input type="radio" id="red" name="colour" value="red">
 					<label for="red">Red</label><br>
-					<button>Submit</button>
+					<button class="btn">Submit</button>
 				</form>
 			</section>
 		</section>
@@ -299,16 +299,21 @@
 				<br>&lt;/figcaption&gt;
 				<br>&lt;/figure&gt;</code>
 			<h4>Rendered Element</h4>
-			<section class="styleguide-rendered">
+			<!-- <section class="styleguide-rendered"> -->
 				<figure>
 					<img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery">
 					<figcaption>
-						<button id="img1" onclick="switchImage('one')">1</button>
-						<button id="img2" onclick="switchImage('two')">2</button>
-						<button id="img3" onclick="switchImage('three')">3</button>
+						<button class="btn" id="imgSwitchLeft" onclick="leftArrowClick(), changeStyleGuideGallery(), gallerySwitch()">&lt;</button>
+						<button class="active" id="img1" onclick="changeGallery(0), changeStyleGuideGallery(), gallerySwitch()"> </button>
+						<button class="inactive" id="img2" onclick="changeGallery(1), changeStyleGuideGallery(), gallerySwitch()"> </button>
+						<button  class="inactive" id="img3" onclick="changeGallery(2), changeStyleGuideGallery(), gallerySwitch()"> </button>
+						<!-- <button class="btn active" id="img1" onclick="switchImage('one')">1</button>
+						<button class="btn inactive" id="img2" onclick="switchImage('two')">2</button>
+						<button  class="btn inactive" id="img3" onclick="switchImage('three')">3</button> -->
+						<button class="btn" id="imgSwitchRight" onclick="rightArrowClick(), changeStyleGuideGallery(), gallerySwitch()">&gt;</button>
 					</figcaption>
 				</figure>
-			</section>
+			<!-- </section> -->
 		</section>
 	</div>
 
@@ -457,8 +462,8 @@
 
 	<section id="footer-social">
 		<h4>Social Media</h4>
-		<a id="twt" href="https://twitter.com/dracaramel"></a>
-		<a id="ig" href="https://www.instagram.com/dracaramel/"></a>
+		<a class="twt" href="https://twitter.com/dracaramel"></a>
+		<a class="ig" href="https://www.instagram.com/dracaramel/"></a>
 	</section>
 	</footer>
 
