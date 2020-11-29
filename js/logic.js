@@ -1,75 +1,88 @@
 // use strict
 
-function switchImage(string){
-  if(string=="one"){
-    $('.gallery').attr('src','img/filler-200.png');
-    console.log("img1");
-  } else if(string=="two"){
-    $('.gallery').attr('src','img/filler-200-red.png');
-    console.log("img2");
-  } else if(string=="three"){
-    $('.gallery').attr('src','img/filler-200-blue.png');
-    console.log("img3");
-  }
-}
-
-function artDirectionSwitch(string){
-  if(string=="one"){
-    $('.gallery').attr('src','img/343_sk4.png');
-    console.log("img1");
-  } else if(string=="two"){
-    $('.gallery').attr('src','img/343_sk5.png');
-    console.log("img2");
-  }
-  // else if(string=="three"){
-  //   $('.gallery').attr('src','img/filler-200-blue.png');
-  //   console.log("img3");
-  // }
-}
-
-function ntIdeationSwitch(string){
-  if(string=="one"){
-    $('.gallery').attr('src','img/nt-mindmap1.png');
-    console.log("img1");
-  } else if(string=="two"){
-    $('.gallery').attr('src','img/nt-mindmap2.png');
-    console.log("img2");
-  }
-}
-
 var currentImg = 0;
 
-function leftArrowClick(){
-  if(currentImg == 0){
-    currentImg = 2;
-  } else {
-    currentImg -= 1;
+function arrowClick(arrow, string){
+  if(arrow=="l"){
+    // console.log('left arrow click')
+    if(currentImg == 0){
+      currentImg = 2;
+      changeStyleGuideGallery(string);
+    } else {
+      currentImg -= 1;
+      changeStyleGuideGallery(string);
+    }
+  } else if(arrow=="r"){
+    if(currentImg == 2){
+      currentImg = 0;
+      changeStyleGuideGallery(string);
+    } else {
+      currentImg += 1;
+      changeStyleGuideGallery(string);
+    }
   }
 }
 
-function rightArrowClick(){
-  if(currentImg == 2){
-    currentImg = 0;
-  } else {
-    currentImg += 1;
-  }
-}
-
-function changeGallery(g) {
+function changeGallery(string, g) {
   currentImg = g;
+  changeStyleGuideGallery(string);
 }
 
-function changeStyleGuideGallery(){
-  if(currentImg==0){
-  $('.gallery').attr('src','img/filler-200.png');
-  } else if(currentImg==1){
-    $('.gallery').attr('src','img/filler-200-red.png');
-  } else if(currentImg==2){
-    $('.gallery').attr('src','img/filler-200-blue.png');
+function changeStyleGuideGallery(string){
+  var gallery = '.gallery';
+
+  if(string=="styleguide"){
+    img1 = 'img/filler-200.png';
+    img2 = 'img/filler-200-red.png';
+    img3 = 'img/filler-200-blue.png';
+  } else if(string=="coco1"){
+    gallery = '#ideation .gallery';
+    img1 = 'img/cocoSK1.png';
+    img2 = 'img/cocoSK2.png';
+    img3 = 'img/cocoSK3.png';
+  } else if(string=="coco2"){
+    gallery = '#art-direction .gallery';
+    img1 = 'img/cocoAD1.png';
+    img2 = 'img/cocoAD2.png';
+  } else if(string=="nt"){
+    img1 = 'img/ntmindmap1.png';
+    img2 = 'img/ntmindmap2.png';
+  } else if(string=="abt"){
+    img1 = 'img/moonpattern.png';
+    img2 = 'img/sick.png';
   }
+
+  if(currentImg==0){
+  $(gallery).attr('src', img1);
+    if(string=="abt"){
+      $('#cap').text('(1) "moons" - illustration - 2015');
+    }
+  } else if(currentImg==1){
+    $(gallery).attr('src', img2);
+    if(string=="abt"){
+      $('#cap').text('(2) "sick" - illustration - 2015');
+    }
+  } else if(currentImg==2){
+    $(gallery).attr('src', img3);
+  }
+
+  gallerySwitch(string);
 }
 
-function gallerySwitch(){
+function gallerySwitch(string){
+  if(string=="coco2"){
+    if(currentImg == 0){
+      $('#ADimg1').removeClass('inactive');
+      $('#ADimg1').addClass('active');
+      $('#ADimg2').removeClass('active');
+      $('#ADimg2').addClass('inactive');
+    } else if(currentImg == 1){
+      $('#ADimg1').removeClass('active');
+      $('#ADimg1').addClass('inactive');
+      $('#ADimg2').removeClass('inactive');
+      $('#ADimg2').addClass('active');
+    }
+  } else {
   if(currentImg == 0){
     $('#img1').removeClass('inactive');
     $('#img1').addClass('active');
@@ -91,10 +104,8 @@ function gallerySwitch(){
     $('#img2').addClass('inactive');
     $('#img3').removeClass('inactive');
     $('#img3').addClass('active');
+    }
   }
 }
-
-
-
 
 jQuery(document).ready();

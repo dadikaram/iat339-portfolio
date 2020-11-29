@@ -228,13 +228,12 @@
 				<br>&lt;/nav&gt;
 			</code>
 			<h4>Rendered Element</h4>
-			<section class="styleguide-rendered">
+			<section class="styleguide-rendered sp">
 				<nav class="main-nav">
 					<a href="index.html" class="nav-link">Home</a>
 					<a href="about.html" class="nav-link">About</a>
 					<a href="coco.html" class="nav-link">Coco's Island</a>
 					<a href="nt.html" class="nav-link">NoteTeacher</a>
-					<a href="personal.html" class="nav-link">Personal</a>
 				</nav>
 			</section>
 		</section>
@@ -303,14 +302,11 @@
 				<figure>
 					<img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery">
 					<figcaption>
-						<button class="btn" id="imgSwitchLeft" onclick="leftArrowClick(), changeStyleGuideGallery(), gallerySwitch()">&lt;</button>
-						<button class="active" id="img1" onclick="changeGallery(0), changeStyleGuideGallery(), gallerySwitch()"> </button>
-						<button class="inactive" id="img2" onclick="changeGallery(1), changeStyleGuideGallery(), gallerySwitch()"> </button>
-						<button  class="inactive" id="img3" onclick="changeGallery(2), changeStyleGuideGallery(), gallerySwitch()"> </button>
-						<!-- <button class="btn active" id="img1" onclick="switchImage('one')">1</button>
-						<button class="btn inactive" id="img2" onclick="switchImage('two')">2</button>
-						<button  class="btn inactive" id="img3" onclick="switchImage('three')">3</button> -->
-						<button class="btn" id="imgSwitchRight" onclick="rightArrowClick(), changeStyleGuideGallery(), gallerySwitch()">&gt;</button>
+						<button class="btn" id="imgSwitchLeft" onclick="arrowClick('l','styleguide')">&lt;</button>
+						<button class="active" id="img1" onclick="changeGallery('styleguide', 0)"> </button>
+						<button class="inactive" id="img2" onclick="changeGallery('styleguide', 1)"> </button>
+						<button class="inactive" id="img3" onclick="changeGallery('styleguide', 2)"> </button>
+						<button class="btn" id="imgSwitchRight" onclick="arrowClick('r','styleguide')">&gt;</button>
 					</figcaption>
 				</figure>
 			<!-- </section> -->
@@ -444,7 +440,6 @@
 			<a href="about.html">About</a>
 			<a href="coco.html">Coco</a>
 			<a href="nt.html">NoteTeacher</a>
-			<a href="personal.html">Personal Work</a>
 		</section>
 		<section class="grid-content 2b">
 			<a href="styleguide.html">Style Guide</a>
