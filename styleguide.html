@@ -31,11 +31,11 @@
 	<div id="styleguide-desc">
 		<h1>Portfolio Styleguide</h1>
 		<nav class="sg-nav">
-			<a href="#textstyling" class="nav-link">Text Styling</a>
-			<a href="#imagestyling" class="nav-link">Image Styling</a>
-			<a href="#interactive" class="nav-link">Interactive Elements</a>
-			<a href="#combined" class="nav-link">Combined Elements</a>
-			<a href="#grids" class="nav-link">Content Grids</a>
+			<a href="#textstyling" class="nav-link">Text&nbsp;Styling</a>
+			<a href="#imagestyling" class="nav-link">Image&nbsp;Styling</a>
+			<a href="#interactive" class="nav-link">Interactive&nbsp;Elements</a>
+			<a href="#combined" class="nav-link">Combined&nbsp;Elements</a>
+			<a href="#grids" class="nav-link">Content&nbsp;Grids</a>
 		</nav>
 	</div>
 
@@ -318,11 +318,16 @@
 			<p>.gallery, .btn, .active, .inactive</p>
 			<h4>Sample Code</h4>
 			<code>&lt;figure&gt;
+				<br>
 				<br>&lt;img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery"&gt;
+				<br>
 				<br>&lt;figcaption&gt;
-					<br>&lt;button class="btn" id="img1" onclick="changeGallery('styleguide1', 0)"&gt; &lt;/button&gt;
-					<br>&lt;button class="btn" id="img2" onclick="changeGallery('styleguide1', 1)"&gt; &lt;/button&gt;
+					<br>&lt;button class="btn" id="img1"
+					onclick="changeGallery(' styleguide1' , 0)"&gt; &lt;/button&gt;
+					<br>
+					<br>&lt;button class="btn" id="img2" onclick="changeGallery(' styleguide1' , 1)"&gt; &lt;/button&gt;
 				<br>&lt;/figcaption&gt;
+				<br>
 				<br>&lt;/figure&gt;</code>
 			<h4>Rendered Element</h4>
 				<section class="styleguide-rendered">
@@ -345,25 +350,34 @@
 			<p>.gallery, .btn, .active, .inactive</p>
 			<h4>Sample Code</h4>
 			<code>&lt;figure&gt;
+				<br>
 				<br>&lt;img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery"&gt;
+				<br>
 				<br>&lt;figcaption&gt;
-					<br>&lt;button class="btn" id="imgSwitchLeft" onclick="arrowClick('l','styleguide')"&gt;1&lt;/button&gt;
-					<br>&lt;button class="btn" id="img1" onclick="changeGallery('styleguide', 0)"&gt; &lt;/button&gt;
-					<br>&lt;button class="btn" id="img2" onclick="changeGallery('styleguide', 1)"&gt; &lt;/button&gt;
-					<br>&lt;button class="btn" id="img3" onclick="changeGallery('styleguide', 2)"&gt; &lt;/button&gt;
-					<br>&lt;button class="btn" id="imgSwitchRight" onclick="arrowClick('r','styleguide')"&gt;1&lt;/button&gt;
+					<br>
+					<br>&lt;button class="btn" id="imgSwitchLeft" onclick="arrowClick( 'l' , 'styleguide')"&gt;◁&lt;/button&gt;
+					<br>
+					<br>&lt;button class="btn" id="img1" onclick="changeGallery( 'styleguide' , 0)"&gt; &lt;/button&gt;
+					<br>
+					<br>&lt;button class="btn" id="img2" onclick="changeGallery( 'styleguide' , 1)"&gt; &lt;/button&gt;
+					<br>
+					<br>&lt;button class="btn" id="img3" onclick="changeGallery( 'styleguide' , 2)"&gt; &lt;/button&gt;
+					<br>
+					<br>&lt;button class="btn" id="imgSwitchRight" onclick="arrowClick( 'r' , 'styleguide')"&gt;▷&lt;/button&gt;
+				<br>
 				<br>&lt;/figcaption&gt;
+				<br>
 				<br>&lt;/figure&gt;</code>
 			<h4>Rendered Element</h4>
 				<section class="styleguide-rendered">
 				<figure id="img-gallery">
 					<img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery">
 					<figcaption>
-						<button class="btn" id="imgSwitchLeft" onclick="arrowClick('l','styleguide')">&lt;</button>
+						<button class="btn" id="imgSwitchLeft" onclick="arrowClick('l','styleguide')">◁</button>
 						<button class="active" id="img1" onclick="changeGallery('styleguide', 0)"> </button>
 						<button class="inactive" id="img2" onclick="changeGallery('styleguide', 1)"> </button>
 						<button class="inactive" id="img3" onclick="changeGallery('styleguide', 2)"> </button>
-						<button class="btn" id="imgSwitchRight" onclick="arrowClick('r','styleguide')">&gt;</button>
+						<button class="btn" id="imgSwitchRight" onclick="arrowClick('r','styleguide')">▷</button>
 					</figcaption>
 				</figure>
 			</section>

@@ -7,6 +7,7 @@
 
 body {
   max-width: 100vw;
+  width: 100vw;
   font-family: quasimoda, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -34,7 +35,6 @@ header div, header h2 {
 div {
   margin: 2rem;
   padding: 2rem;
-  /* max-width: 80%; */
 }
 
 div#navigation, div#copyright {
@@ -119,6 +119,11 @@ figcaption {
   padding: 0.5rem;
 }
 
+code {
+  max-width: 100%;
+}
+
+
 
 /* EXTRA STYLING FOR STYLEGUIDE */
 
@@ -132,6 +137,9 @@ hr {
   display: block;
 }
 
+.sg-nav {
+  display: inline-block;
+}
 
 
 
@@ -237,6 +245,11 @@ a:focus {
 
 .active:hover, .inactive:hover {
   background-color: #63C29C;
+}
+
+#imgSwitchRight, #imgSwitchLeft {
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -436,7 +449,101 @@ footer section a:focus {
 
 /* MEDIA QUERIES */
 
+/* Screen size below 480px */
 @media screen and (max-width: 30rem){
+  body {
+    /* font-size: 0.85rem; */
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .sg-nav a {
+    display: block;
+    padding-top: 0.4rem;
+  }
+
+  .main-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .main-nav a {
+    display: block;
+  }
+
+  .grid-container {
+    display: block;
+  }
+
+  .grid-content {
+    display: block;
+    width: 100%;
+  }
+
+
+
+
+  footer {
+    display: block;
+  }
+
+  footer section {
+    display: block;
+    width: 100%;
+  }
+
+  footer h4 {
+    padding: 1rem;
+  }
+
+  footer .grid-container {
+    display: flex;
+  }
+
+  footer .grid-content {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+
+
+
+/* Screen size between 480px and 600px*/
+@media screen and (min-width: 30rem) and (max-width:40rem){
+  body {
+    /* font-size: 0.85rem; */
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
   .grid-container {
     display: block;
   }
@@ -452,9 +559,59 @@ footer section a:focus {
   div h2, div h3,div h4,div p {
     padding-left: 0;
   }
+
+  footer {
+    display: block;
+  }
+
+  footer section {
+    display: block;
+    width: 100%;
+  }
+
+  footer h4 {
+    padding: 1rem;
+  }
+
+  footer .grid-container {
+    display: flex;
+  }
+
+  footer .grid-content {
+    width: 50%;
+    margin-right: 0;
+  }
+
 }
 
-@media screen and (min-width: 1200px){
+/* Screen size between 600px and 1200px */
+@media screen and (min-width:40rem) and (max-width: 75rem;){
+  footer {
+    display: flex;
+  }
+
+  footer section {
+    display: inline;
+    width: 33.33%;
+  }
+
+  footer h4 {
+    padding: 1rem;
+  }
+
+  footer .grid-container {
+    display: flex;
+  }
+
+  footer .grid-content {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+
+/* Screen size above 1200px */
+@media screen and (min-width: 75rem){
   main {
     margin-left: 15%;
     margin-right: 15%;

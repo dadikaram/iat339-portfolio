@@ -42,3 +42,30 @@ footer .grid-content {
   border: none;
   border-radius: 0;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:30rem){
+    h1 {
+      font-size: 3.2rem;
+    }
+}
+
+
+@media screen and (min-width:50rem){
+
+  div {
+    margin: 1rem 10% 1rem 10%;
+    max-width: 75rem;
+  }
+}
+
+@media screen and (min-width:100rem){
+
+  div {
+    margin: 1rem 25% 1rem 25%;
+    max-width: 50%;
+  }
+
+}

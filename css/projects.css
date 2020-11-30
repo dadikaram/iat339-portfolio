@@ -151,8 +151,39 @@ section.2a {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 30rem){
+  div {
+    max-width: 100%;
+    left: 0;
+  }
   div section {
     margin-bottom: 5rem;
+  }
+
+  #main-header figure, #main-header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  #nt-header h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    width: auto;
+  }
+
+  div h3 {
+    padding-left: 1.5rem;
+  }
+
+  figure{
+    max-width: 100%;
+    margin: 1.5rem;
+  }
+
+  .grid-content p {
+    margin: 1.5rem;
+    padding: 0;
   }
 }
 
