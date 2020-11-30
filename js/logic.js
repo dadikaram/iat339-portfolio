@@ -31,7 +31,12 @@ function changeGallery(string, g) {
 function changeStyleGuideGallery(string){
   var gallery = '.gallery';
 
-  if(string=="styleguide"){
+  if(string=="styleguide1"){
+    gallery = '#img-switch .gallery';
+    img1 = 'img/filler-200.png';
+    img2 = 'img/filler-200-red.png';
+  } else if(string=="styleguide"){
+    gallery = '#img-gallery .gallery';
     img1 = 'img/filler-200.png';
     img2 = 'img/filler-200-red.png';
     img3 = 'img/filler-200-blue.png';
@@ -81,6 +86,18 @@ function gallerySwitch(string){
       $('#ADimg1').addClass('inactive');
       $('#ADimg2').removeClass('inactive');
       $('#ADimg2').addClass('active');
+    }
+  } else if(string=="styleguide1"){
+    if(currentImg == 0){
+      $('#imgA').removeClass('inactive');
+      $('#imgA').addClass('active');
+      $('#imgB').removeClass('active');
+      $('#imgB').addClass('inactive');
+    } else if(currentImg == 1){
+      $('#imgA').removeClass('active');
+      $('#imgA').addClass('inactive');
+      $('#imgB').removeClass('inactive');
+      $('#imgB').addClass('active');
     }
   } else {
   if(currentImg == 0){

@@ -1,3 +1,5 @@
+/* BASIC CONTAINER STYLING */
+
 body {
 }
 
@@ -8,10 +10,18 @@ div {
   /* max-width: 100%; */
 }
 
+
+
+/* TEXT STYLING */
+
 h1 {
   text-align: center;
   margin: 2rem;
 }
+
+
+
+/* ADJUSTING GRIDS */
 
 div section.grid-content {
   padding: 2rem 0rem;
@@ -21,6 +31,10 @@ div section.grid-content {
   padding-top: 1rem;
   padding-right: 2rem;
 }
+
+
+
+/* SOCIAL MEDIA ICONS */
 
 .sm {
   background-color: #1f1d23;

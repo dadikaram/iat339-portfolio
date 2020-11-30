@@ -4,30 +4,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Website Tab Title -->
 	<title>Style Guide | Dinuki Adikaram</title>
 
-	<!-- Website Tab Icon -->
+	<!-- ADDING ICON FOR BROWSER TAB -->
 	<link rel="icon" href="img/logo_fixed_wh_sq.png" type="image/png">
 
-	<!-- Linked Style Sheets -->
+	<!-- STYLESHEETS -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/styleguide.css" rel="stylesheet">
 
 
-	<!-- Fonts -->
+	<!-- FONTS -->
 	<link rel="stylesheet" href="https://use.typekit.net/dbn5ijw.css">
 	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
 
-	<!-- JavaScript -->
+	<!-- JAVASCRIPT LINKS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/logic.js"></script>
 </head>
 
 <body>
 
+	<!-- STYLEGUIDE TITLE + NAVIGATION -->
 	<div id="styleguide-desc">
 		<h1>Portfolio Styleguide</h1>
 		<nav class="sg-nav">
@@ -39,8 +39,15 @@
 		</nav>
 	</div>
 
+
+
+
+
+	<!-- TEXT ELEMENTS -->
 	<div id="textstyling">
 		<h2>Text Styling</h2>
+
+		<!-- HEADERS -->
 		<section class="element-section">
 			<h3>Headings</h3>
 			<h4>CSS Selector</h4>
@@ -58,6 +65,7 @@
 
 		<hr>
 
+		<!-- PARAGRAPHS -->
 		<section class="element-section">
 			<h3>Paragraphs</h3>
 			<h4>CSS Selector</h4>
@@ -72,6 +80,7 @@
 
 		<hr>
 
+		<!-- LISTS -->
 		<section class="element-section">
 			<h3>Lists</h3>
 			<h4>CSS Selector</h4>
@@ -95,10 +104,19 @@
 				</ol>
 			</section>
 		</section>
-	</div>
 
+
+	</div> <!-- END TEXT STYLING -->
+
+
+
+
+
+	<!-- IMAGE STYLING -->
 	<div id="imagestyling">
 		<h2>Image Styling</h2>
+
+		<!-- BASIC IMG STYLING -->
 		<section class="element-section">
 			<h3>Image</h3>
 			<h4>CSS Selector</h4>
@@ -114,6 +132,7 @@
 
 		<hr>
 
+		<!-- FIGURE STYLING -->
 		<section class="element-section">
 			<h3>Figure with Caption</h3>
 			<h4>CSS Selector</h4>
@@ -132,8 +151,16 @@
 				</figure>
 			</section>
 		</section>
-	</div>
 
+	</div> <!-- END IMAGE STYLING -->
+
+
+
+
+
+
+
+	<!-- INTERACTIVE ELEMENTS -->
 	<div id="interactive">
 		<h2>Interactive Elements</h2>
 		<section class="element-section">
@@ -151,22 +178,7 @@
 
 		<hr>
 
-		<section class="element-section">
-			<h3>Navigation</h3>
-			<h4>CSS Selector</h4>
-			<p>.nav-link</p>
-			<h4>Sample Code</h4>
-			<code>&lt;nav&gt;&lt;a href="/index.html" class="nav-link"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>
-			<h4>Rendered Element</h4>
-			<section class="styleguide-rendered">
-				<nav>
-					<a href="/index.html" class="nav-link">Home</a>
-				</nav>
-			</section>
-		</section>
-
-		<hr>
-
+		<!-- BUTTONS -->
 		<section class="element-section">
 			<h3>Button</h3>
 			<h4>CSS Selector</h4>
@@ -179,6 +191,8 @@
 			</section>
 		</section>
 
+
+		<!--
 		<section class="element-section">
 			<h3>Text Input Field with a Label</h3>
 			<h4>CSS Selector</h4>
@@ -214,10 +228,22 @@
 					<label for="red">Red</label>
 				</section>
 		</section>
-	</div>
 
+			-->
+	</div> <!--END INTERACTIVE ELEMENTS -->
+
+
+
+
+
+
+
+
+	<!-- COMBINED ELEMENTS -->
 	<div id="combined">
 		<h2>Combined Elements</h2>
+
+		<!-- MAIN NAVIGATION -->
 		<section class="element-section">
 			<h3>Navigation</h3>
 			<h4>CSS Selector</h4>
@@ -238,9 +264,9 @@
 			</section>
 		</section>
 
-		<hr>
+		<!-- <hr> -->
 
-		<section class="element-section">
+		<!-- <section class="element-section">
 			<h3>Form</h3>
 			<h4>CSS Selector</h4>
 			<p>.form</p>
@@ -260,10 +286,11 @@
 					<button class="btn">Submit</button>
 				</form>
 			</section>
-		</section>
+		</section> -->
 
 		<hr>
 
+		<!-- IMAGE LINKS -->
 		<section class="element-section">
 			<h3>Image as Link</h3>
 			<h4>CSS Selector</h4>
@@ -284,22 +311,52 @@
 
 		<hr>
 
+		<!-- IMAGE SWITCH -->
 		<section class="element-section">
-			<h3>Image Gallery/Switch</h3>
+			<h3>Image SWITCH</h3>
 			<h4>CSS Selector</h4>
-			<p>.gallery</p>
+			<p>.gallery, .btn, .active, .inactive</p>
 			<h4>Sample Code</h4>
 			<code>&lt;figure&gt;
 				<br>&lt;img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery"&gt;
-				<br>&lt;figcaption>
-					<br>&lt;button id="img1" onclick="switchImage('one')"&gt;1&lt;/button&gt;
-					<br>&lt;button id="img2" onclick="switchImage('two')"&gt;2&lt;/button&gt;
-					<br>&lt;button id="img3" onclick="switchImage('three')"&gt;3&lt;/button&gt;
+				<br>&lt;figcaption&gt;
+					<br>&lt;button class="btn" id="img1" onclick="changeGallery('styleguide1', 0)"&gt; &lt;/button&gt;
+					<br>&lt;button class="btn" id="img2" onclick="changeGallery('styleguide1', 1)"&gt; &lt;/button&gt;
 				<br>&lt;/figcaption&gt;
 				<br>&lt;/figure&gt;</code>
 			<h4>Rendered Element</h4>
-			<!-- <section class="styleguide-rendered"> -->
-				<figure>
+				<section class="styleguide-rendered">
+				<figure id="img-switch">
+					<img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery">
+					<figcaption>
+						<button class="active" id="imgA" onclick="changeGallery('styleguide1', 0)"> </button>
+						<button class="inactive" id="imgB" onclick="changeGallery('styleguide1', 1)"> </button>
+					</figcaption>
+				</figure>
+			</section>
+		</section>
+
+		<hr>
+
+		<!-- IMAGE GALLERY -->
+		<section class="element-section">
+			<h3>Image Gallery</h3>
+			<h4>CSS Selector</h4>
+			<p>.gallery, .btn, .active, .inactive</p>
+			<h4>Sample Code</h4>
+			<code>&lt;figure&gt;
+				<br>&lt;img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery"&gt;
+				<br>&lt;figcaption&gt;
+					<br>&lt;button class="btn" id="imgSwitchLeft" onclick="arrowClick('l','styleguide')"&gt;1&lt;/button&gt;
+					<br>&lt;button class="btn" id="img1" onclick="changeGallery('styleguide', 0)"&gt; &lt;/button&gt;
+					<br>&lt;button class="btn" id="img2" onclick="changeGallery('styleguide', 1)"&gt; &lt;/button&gt;
+					<br>&lt;button class="btn" id="img3" onclick="changeGallery('styleguide', 2)"&gt; &lt;/button&gt;
+					<br>&lt;button class="btn" id="imgSwitchRight" onclick="arrowClick('r','styleguide')"&gt;1&lt;/button&gt;
+				<br>&lt;/figcaption&gt;
+				<br>&lt;/figure&gt;</code>
+			<h4>Rendered Element</h4>
+				<section class="styleguide-rendered">
+				<figure id="img-gallery">
 					<img src="img/filler-200.png" alt="Filler image of 200px by 200px" class="gallery">
 					<figcaption>
 						<button class="btn" id="imgSwitchLeft" onclick="arrowClick('l','styleguide')">&lt;</button>
@@ -309,12 +366,20 @@
 						<button class="btn" id="imgSwitchRight" onclick="arrowClick('r','styleguide')">&gt;</button>
 					</figcaption>
 				</figure>
-			<!-- </section> -->
+			</section>
 		</section>
-	</div>
+	</div> <!-- END COMBINED ELEMENTS -->
 
+
+
+
+
+
+	<!-- GRIDS -->
 	<div id="grids">
 		<h2>Content Grids</h2>
+
+		<!-- 2-COLUMN GRIDS -->
 		<section class="element-section">
 			<h3>2-Column Grid</h3>
 			<h4>CSS Selector</h4>
@@ -345,6 +410,7 @@
 
 		<hr>
 
+		<!-- 3-COLUMN GRIDS -->
 		<section class="element-section">
 			<h3>3-Column Grid</h3>
 			<h4>CSS Selector</h4>
@@ -383,6 +449,7 @@
 
 		<hr>
 
+		<!-- 4-ITEM GRIDS  -->
 		<section class="element-section">
 			<h3>4-Item Grid</h3>
 			<h4>CSS Selector</h4>
@@ -402,6 +469,7 @@
 
 		<hr>
 
+		<!-- UNEVEN GRID -->
 		<section class="element-section">
 			<h3>Uneven Grid</h3>
 			<h4>CSS Selector</h4>
@@ -429,37 +497,43 @@
 				</section>
 			</section>
 		</section>
-	</div>
+	</div> <!-- END GRIDS -->
 
+
+	<!-- FOOTER -->
 	<footer>
+
+		<!-- FOOTER NAVIGATION -->
 		<section id="footer-nav">
 			<h4>Navigation</h4>
 			<section class="grid-container">
 				<section class="grid-content 2a">
-			<a href="index.html">Home</a>
-			<a href="about.html">About</a>
-			<a href="coco.html">Coco</a>
-			<a href="nt.html">NoteTeacher</a>
-		</section>
-		<section class="grid-content 2b">
-			<a href="styleguide.html">Style Guide</a>
-			<a href="https://github.com/dadikaram/portfolio">GitHub</a>
-		</section>
-		</section>
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="coco.html">Coco</a>
+					<a href="nt.html">NoteTeacher</a>
+				</section>
+			<section class="grid-content 2b">
+				<a href="styleguide.html">Style Guide</a>
+				<a href="https://github.com/dadikaram/portfolio">GitHub</a>
+				</section>
+			</section>
 		</section>
 
-	<section id="footer-contact">
-		<h4>Contact</h4>
-		<a href="mailto:dadikara@sfu.ca">dadikara@sfu.ca</a>
-		<a href="mailto:adikaram.dinuki@gmail.com">adikaram.dinuki@gmail.com</a>
-		<a href="https://www.linkedin.com/in/dinuki-adikaram-ba8018173">LinkedIn</a>
-	</section>
+		<!-- FOOTER CONTACT LINKS -->
+		<section id="footer-contact">
+			<h4>Contact</h4>
+			<a href="mailto:dadikara@sfu.ca">dadikara@sfu.ca</a>
+			<a href="mailto:adikaram.dinuki@gmail.com">adikaram.dinuki@gmail.com</a>
+			<a href="https://www.linkedin.com/in/dinuki-adikaram-ba8018173">LinkedIn</a>
+		</section>
 
-	<section id="footer-social">
-		<h4>Social Media</h4>
-		<a class="twt" href="https://twitter.com/dracaramel"></a>
-		<a class="ig" href="https://www.instagram.com/dracaramel/"></a>
-	</section>
+		<!-- FOOTER SOCIAL MEDIA ICONS -->
+		<section id="footer-social">
+			<h4>Social Media</h4>
+			<a class="twt" href="https://twitter.com/dracaramel"></a>
+			<a class="ig" href="https://www.instagram.com/dracaramel/"></a>
+		</section>
 	</footer>
 
 	<div id="copyright">Portfolio © Dinuki Adikaram, 2020</div>

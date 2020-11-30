@@ -1,3 +1,4 @@
+/* BASIC CONTAINER STYLING */
 div {
   margin: 1rem;
   padding: 2rem;
@@ -5,7 +6,7 @@ div {
   border-radius: 5px;
 }
 
-
+/* TEXT STYLING */
 div h2, div h3, div h4, p {
   padding-left: 0rem;
   margin: 1rem 0 1rem 0;
@@ -15,15 +16,28 @@ ul, ol {
   margin-left: -1.33rem;
 }
 
+/* ADJUSTING GRIDS */
 .grid-content {
   border: 1px solid grey;
   border-radius: 5px;
 }
 
+/* ADJUSTING FIGURES */
+  .styleguide-rendered figure {
+  background-color: #1f1d23;
+  /* border: 1px solid grey; */
+  border-radius: 5px;
+}
+
+
+/* ADJUSTING FOOTER SECTION */
+footer .grid-content {
+  border: none;
+  border-radius: 0;
+}
+
+/* ADJUSTING COPYRIGHT SECTION */
 #copyright {
-  background-color: #507A69;
-  text-align: center;
-  color: #ffffff;
   padding: 1rem;
   border: none;
   border-radius: 0;
