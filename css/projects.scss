@@ -38,7 +38,7 @@ div section {
 /* HEADER IMAGE STYLING */
 
 .page-header {
-  width: 100;
+  width: 100vw;
   height: 60vh;
   margin: 0;
   background-position: right;
@@ -82,6 +82,7 @@ img {
 }
 
 iframe {
+  border: 5px solid $darkgrey;
   width: 40vw;
   height: 30vh;
 }
@@ -205,5 +206,13 @@ section.2a {
   .proj-desc {
     max-width: 80%;
     /* margin-left: 0; */
+  }
+}
+
+/* Screen size between 600px and 1200px */
+@media screen and (min-width: 40rem) and (max-width: 75rem) {
+  .proj-desc {
+    width: 60%;
+    max-width: 60%;
   }
 }

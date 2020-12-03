@@ -61,7 +61,7 @@
 	<div>
 		<section id="ideation" class="grid-container">
 			<figure class="grid-content 2a">
-				<img src="img/ntmindmap1.png" alt="Filler image of 200px by 200px" class="gallery">
+				<img src="img/ntmindmap1.png" alt="Initial brainstorming notes." class="gallery">
 				<figcaption>
 					<button class="active" id="img1" onclick="changeGallery('nt', 0)"> </button>
 					<button class="inactive" id="img2" onclick="changeGallery('nt', 1)"> </button>
@@ -76,14 +76,14 @@
 		<section id="prototype">
 			<h3>PROTOTYPING</h3>
 			<section class="grid-container">
-				<figure class="grid-content 2a"><img src="img/nt_milestone1.png"></figure>
+				<figure class="grid-content 2a"><img src="img/nt_milestone1.png" alt="Diagram of our first milestone setup, with one sensor connected to the processing interface via the Arduino microcontroller."></figure>
 				<section class="grid-content 2b">
 					<h4>MILESTONE 1</h4>
 					<p>Our first milestone was to successfully use a touch sensor to trigger both a sound, using the Minim library, as well as an interface change in Processing. The biggest challenge at this stage was to successfully communicate between the circuitry and Processing, which we were able to achieve by referencing and experimenting with both course and external materials.</p>
 				</section>
 			</section>
 			<section class="grid-container">
-				<figure class="grid-content 2a"><img src="img/nt_milestone2.png"></figure>
+				<figure class="grid-content 2a"><img src="img/nt_milestone2.png" alt="Diagram of our second milestone setup, with three sensors connected to the processing interface via the Arduino microcontroller."></figure>
 				<section class="grid-content 2b">
 					<h4>MILESTONE 2</h4>
 					<p>Our next milestone was to successfully expand our system to three sensors, each of which would prompt a different sound and interface change. The main concern at this stage was maintaining our circuitry to avoid confusion.</p>
@@ -91,7 +91,7 @@
 			</section>
 
 			<section class="grid-container">
-				<figure class="grid-content 2a"><img src="img/nt_milestone3.png"></figure>
+				<figure class="grid-content 2a"><img src="img/nt_milestone3.png" alt="Diagram of our second milestone setup, with fours sensors connected to the processing interface via the Arduino microcontroller."></figure>
 				<section class="grid-content 2b">
 					<h4>MILESTONE 3</h4>
 					<p>The next milestone, and final major milestone before expanding to our full set of sensors was to incorporate one of our potentiometers, and to map its value to a variable in Processing. Based on the value, the system would switch to one of three instrument modes. This required more careful consideration to the wiring to the Arduino microcontroller as we were now dealing with both analog and digital sensors.</p>
@@ -100,7 +100,7 @@
 		</section>
 
 		<section id="final" class="grid-container">
-			<figure class="grid-content 2a"><img src="img/nt_milestone4.png"></figure>
+			<figure class="grid-content 2a"><img src="img/nt_milestone4.png" alt="Diagram of our final deliverable setup, with twelve sensors connected to the processing interface via the Arduino microcontroller."></figure>
 			<section class="grid-content 2b">
 				<h3>FINAL DELIVERABLE</h3>
 				<p>As we already knew we had the capability to add potentiometers, we chose to add our second potentiometer at the last stage. For this potentiometer, the value was mapped to a 100 scale for the volume of the device, which then changed the corresponding volume slider on the interface. In order to expand to 12 touch sensors successfully, as well as to add our potentiometers, we needed to clearly mark and organize our circuits and wires, as well as create a body for the system. As one of our final steps, we also finalized our interface design at this stage.</p>
@@ -108,6 +108,9 @@
 		</section>
 	</div>
 </main>
+
+<!-- SCROLL TO TOP BUTTON -->
+<div id="scrollUpbtn" class="round-btn" onclick="toTop()"><img src="img/arrowUp.png"></div>
 
 <!-- FOOTER -->
 <footer>

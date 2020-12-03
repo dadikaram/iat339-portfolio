@@ -229,12 +229,11 @@ a:focus {
 }
 
 #scrollUpbtn{
+  display: none;
   position: fixed;
   bottom: 2rem;
   right:  2rem;
-}
-
-#scrollUpbtn img {
+  left: inherit;
 }
 
 
@@ -323,12 +322,13 @@ a:focus {
 
 figure.grid-content {
   margin: 0;
-  background-color: $darkgrey;
+  // background-color: $darkgrey;
   color: #ffffff;
 }
 
 figure.grid-content img {
-  max-width: 100%;
+  max-width: 98%;
+  border: 5px solid $darkgrey;
 }
 
 section.grid-content {

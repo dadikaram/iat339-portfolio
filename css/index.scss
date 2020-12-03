@@ -180,6 +180,14 @@ p {
   #menu-btn {
     display: none;
   }
+
+  .grid-content p {
+    padding: 1rem 2rem;
+  }
+
+  figure.grid-content {
+
+  }
 }
 
 @media screen and (min-width: 50rem) and (max-width: 75rem){

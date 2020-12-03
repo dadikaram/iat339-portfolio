@@ -160,6 +160,10 @@ p {
   #menu-btn {
     display: none;
   }
+
+  .grid-content p {
+    padding: 1rem 2rem;
+  }
 }
 @media screen and (min-width: 50rem) and (max-width: 75rem) {
   #landinglogo {

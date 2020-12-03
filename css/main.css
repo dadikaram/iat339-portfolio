@@ -206,9 +206,11 @@ a:focus {
 }
 
 #scrollUpbtn {
+  display: none;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  left: inherit;
 }
 
 /* BUTTONS */
@@ -288,12 +290,12 @@ a:focus {
 
 figure.grid-content {
   margin: 0;
-  background-color: #1F1D23;
   color: #ffffff;
 }
 
 figure.grid-content img {
-  max-width: 100%;
+  max-width: 98%;
+  border: 5px solid #1F1D23;
 }
 
 section.grid-content {
