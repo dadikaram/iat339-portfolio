@@ -4,33 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Website Tab Title -->
 	<title>About | Dinuki Adikaram</title>
 
-	<!-- Website Tab Icon -->
+	<!-- ADDING ICON FOR BROWSER TAB -->
 	<link rel="icon" href="img/logo_fixed_wh_sq.png" type="image/png">
 
-	<!-- Linked Style Sheets -->
+	<!-- STYLESHEETS -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/about.css" rel="stylesheet">
 
-	<!-- Fonts -->
+	<!-- FONTS -->
 	<link rel="stylesheet" href="https://use.typekit.net/dbn5ijw.css">
 	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
 
-	<!-- JavaScript -->
+	<!-- JAVASCRIPT LINKS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/logic.js"></script>
 </head>
 <body>
+
+	<!-- SITE HEADER -->
 	<header>
 		<div id="main-header"><a href="index.html">
-			<figure id="main-logo"><img src="img/logo_fixed_wh.png"></figure>
+			<figure id="main-logo"><img src="img/logo_fixed_wh.png" alt="Website logo"></figure>
 			<h1>DINUKI&nbsp;ADIKARAM</h1>
 		</a>
 	</div>
+
+	<!-- SITE NAVIGATION -->
 	<nav class="main-nav">
 		<a href="index.html" class="nav-link">Home</a>
 		<a href="about.html" class="nav-link current">About</a>
@@ -38,10 +41,15 @@
 		<a href="nt.html" class="nav-link">NoteTeacher</a>
 	</nav>
 
-	<div class="round-btn" id="menu-btn" onclick="showMenu()"><img src="img/menu2.png"></div>
+	<!-- HAMBURGER MENU BUTTON -->
+	<div class="round-btn" id="menu-btn" onclick="showMenu()"><img src="img/menu2.png" alt="Expanding menu button"></div>
 </header>
 
+
+<!-- START MAIN CONTENT -->
 <main>
+
+	<!-- BIOGRAPHY -->
 	<div id="bio" class="grid-container">
 		<figure class="grid-content 2a"><img src="img/okay_edit.png" alt="Digital illustration, self-portrait.">
 			<figcaption>"okay" - digital - 2015</figcaption></figure>
@@ -51,6 +59,7 @@
 			</section>
 		</div>
 
+		<!-- INSPIRATIONS -->
 		<div id="insp" class="grid-container">
 			<section class="grid-content 2a">
 				<h2>INSPIRATIONS</h2>
@@ -64,9 +73,9 @@
 					<span id="cap">(1) "moons" - illustration - 2015</span>
 				</figcaption>
 			</figure>
-
 		</div>
 
+		<!-- CONTACT INFORMATION -->
 		<div id="contact-me" class="grid-container">
 			<section class="grid-content 2a sm">
 				<h3>SOCIAL MEDIA</h3>
@@ -85,7 +94,7 @@
 	</main>
 
 	<!-- SCROLL TO TOP BUTTON -->
-	<div id="scrollUpbtn" class="round-btn" onclick="toTop()"><img src="img/arrowUp.png"></div>
+	<div id="scrollUpbtn" class="round-btn" onclick="toTop()"><img src="img/arrowUp.png" alt="Scroll up button">></div>
 
 	<!-- FOOTER -->
 	<footer>
@@ -102,6 +111,7 @@
 				</section>
 				<section class="grid-content 2b">
 					<a href="styleguide.html">Style Guide</a>
+					<a href="citations.html">Citations</a>
 					<a href="https://github.com/dadikaram/portfolio">GitHub</a>
 				</section>
 			</section>
@@ -123,6 +133,7 @@
 		</section>
 	</footer>
 
+	<!-- COPYRIGHT -->
 	<div id="copyright">Portfolio © Dinuki Adikaram, 2020</div>
 
 </body>

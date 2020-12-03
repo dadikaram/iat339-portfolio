@@ -82,8 +82,14 @@ p {
   line-height: 1.6;
 }
 
-ul, ol {
+ul {
   list-style-type: none;
+  margin-left: -2.66rem;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: -1.33rem;
 }
 
 li {
@@ -181,6 +187,14 @@ a:focus {
 
 .nav-link {
   margin-right: 2rem;
+}
+
+a img:hover {
+  opacity: 0.7;
+}
+
+a img:focus {
+  border-color: #63C29C;
 }
 
 /* ADDITIONAL BUTTONS FOR MENU + SCROLL  */

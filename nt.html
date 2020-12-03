@@ -4,34 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Website Tab Title -->
 	<title>Interactive System - NoteTeacher | Dinuki Adikaram</title>
 
-	<!-- Website Tab Icon -->
+	<!-- ADDING ICON FOR BROWSER TAB -->
 	<link rel="icon" href="img/logo_fixed_wh_sq.png" type="image/png">
 
-	<!-- Linked Style Sheets -->
+	<!-- STYLESHEETS -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/projects.css" rel="stylesheet">
 
-	<!-- Fonts -->
+	<!-- FONTS -->
 	<link rel="stylesheet" href="https://use.typekit.net/dbn5ijw.css">
 	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
-	<!-- JavaScript -->
+	<!-- JAVASCRIPT LINKS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/logic.js"></script>
 </head>
 
 <body>
+
+	<!-- SITE HEADER -->
 	<header>
 		<div id="main-header"><a href="index.html">
-			<figure id="main-logo"><img src="img/logo_fixed_wh.png"></figure>
+			<figure id="main-logo"><img src="img/logo_fixed_wh.png" alt="Website logo"></figure>
 			<h1>DINUKI&nbsp;ADIKARAM</h1>
 		</a>
 	</div>
 
+	<!-- SITE NAVIGATION -->
 	<nav class="main-nav">
 		<a href="index.html" class="nav-link">Home</a>
 		<a href="about.html" class="nav-link">About</a>
@@ -39,8 +41,14 @@
 		<a href="nt.html" class="nav-link current">NoteTeacher</a>
 	</nav>
 
-	<div class="round-btn" id="menu-btn" onclick="showMenu()"><img src="img/menu2.png"></div>
+	<!-- HAMBURGER MENU BUTTON -->
+	<div class="round-btn" id="menu-btn" onclick="showMenu()"><img src="img/menu2.png" alt="Expanding menu button"></div>
 
+
+
+
+
+	<!-- PROJECT HEADER -->
 	<div id="nt-header" class="page-header">
 		<h2>NOTETEACHER</h2>
 		<section class="proj-desc">
@@ -49,16 +57,19 @@
 	</div>
 </header>
 
-
+<!--
 <nav id="content-nav">
 	<a href="#ideation">Ideation</a>
 	<a href="#prototype">Prototype</a>
 	<a href="#final">Final Delivery</a>
-</nav>
+</nav> -->
 
 
+<!-- START MAIN CONTENT -->
 <main>
 	<div>
+
+		<!-- IDEATION -->
 		<section id="ideation" class="grid-container">
 			<figure class="grid-content 2a">
 				<img src="img/ntmindmap1.png" alt="Initial brainstorming notes." class="gallery">
@@ -73,15 +84,22 @@
 			</section>
 		</section>
 
+
+		<!-- PROTOTYPING -->
 		<section id="prototype">
 			<h3>PROTOTYPING</h3>
+
+			<!-- FIRST MILESTONE -->
 			<section class="grid-container">
 				<figure class="grid-content 2a"><img src="img/nt_milestone1.png" alt="Diagram of our first milestone setup, with one sensor connected to the processing interface via the Arduino microcontroller."></figure>
+
 				<section class="grid-content 2b">
 					<h4>MILESTONE 1</h4>
 					<p>Our first milestone was to successfully use a touch sensor to trigger both a sound, using the Minim library, as well as an interface change in Processing. The biggest challenge at this stage was to successfully communicate between the circuitry and Processing, which we were able to achieve by referencing and experimenting with both course and external materials.</p>
 				</section>
 			</section>
+
+			<!-- SECOND MILESTONE -->
 			<section class="grid-container">
 				<figure class="grid-content 2a"><img src="img/nt_milestone2.png" alt="Diagram of our second milestone setup, with three sensors connected to the processing interface via the Arduino microcontroller."></figure>
 				<section class="grid-content 2b">
@@ -90,6 +108,7 @@
 				</section>
 			</section>
 
+			<!-- THIRD MILESTONE -->
 			<section class="grid-container">
 				<figure class="grid-content 2a"><img src="img/nt_milestone3.png" alt="Diagram of our second milestone setup, with fours sensors connected to the processing interface via the Arduino microcontroller."></figure>
 				<section class="grid-content 2b">
@@ -97,8 +116,10 @@
 					<p>The next milestone, and final major milestone before expanding to our full set of sensors was to incorporate one of our potentiometers, and to map its value to a variable in Processing. Based on the value, the system would switch to one of three instrument modes. This required more careful consideration to the wiring to the Arduino microcontroller as we were now dealing with both analog and digital sensors.</p>
 				</section>
 			</section>
-		</section>
+		</section> <!-- END PROTOTYPING SECTION -->
 
+
+		<!-- FINAL DELIVERABLE -->
 		<section id="final" class="grid-container">
 			<figure class="grid-content 2a"><img src="img/nt_milestone4.png" alt="Diagram of our final deliverable setup, with twelve sensors connected to the processing interface via the Arduino microcontroller."></figure>
 			<section class="grid-content 2b">
@@ -110,7 +131,7 @@
 </main>
 
 <!-- SCROLL TO TOP BUTTON -->
-<div id="scrollUpbtn" class="round-btn" onclick="toTop()"><img src="img/arrowUp.png"></div>
+<div id="scrollUpbtn" class="round-btn" onclick="toTop()"><img src="img/arrowUp.png" alt="Scroll up button">></div>
 
 <!-- FOOTER -->
 <footer>
@@ -127,6 +148,7 @@
 			</section>
 			<section class="grid-content 2b">
 				<a href="styleguide.html">Style Guide</a>
+				<a href="citations.html">Citations</a>
 				<a href="https://github.com/dadikaram/portfolio">GitHub</a>
 			</section>
 		</section>
@@ -148,6 +170,7 @@
 	</section>
 </footer>
 
+<!-- COPYRIGHT -->
 <div id="copyright">Portfolio © Dinuki Adikaram, 2020</div>
 
 </body>

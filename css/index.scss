@@ -74,6 +74,13 @@ div {
   left: 50%;
 }
 
+#scrollDownbtn {
+  display: none;
+  position: absolute;
+  top: 90vh;
+  left: 50%;
+}
+
 
 
 
@@ -98,6 +105,12 @@ p {
 .grid-content p {
   padding-top: 1rem;
   padding-right: 2rem;
+}
+
+
+figcaption {
+  margin-top: -0.5rem;
+  background-color: $darkgrey;
 }
 
 
@@ -181,12 +194,21 @@ p {
     display: none;
   }
 
-  .grid-content p {
+  .grid-container {
     padding: 1rem 2rem;
   }
 
-  figure.grid-content {
+  .grid-content p {
+    // padding: 1rem 2rem;
+  }
 
+  figure {
+    // max-width: 100%;
+  }
+
+  figure.grid-content {
+    // max-width: 98%;
+    // padding: 1rem 2rem;
   }
 }
 
@@ -199,6 +221,9 @@ p {
     margin-top: 2vh;
   }
 
+  #scrollDownbtn {
+  display: block;
+  }
 }
 
 
@@ -212,5 +237,9 @@ p {
     margin: 0 33.33% 0 33.33%;
     width: 33.33%;
     padding-top: 30vh;
+  }
+
+  #scrollDownbtn {
+  display: block;
   }
 }

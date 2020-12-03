@@ -65,6 +65,13 @@ div {
   left: 50%;
 }
 
+#scrollDownbtn {
+  display: none;
+  position: absolute;
+  top: 90vh;
+  left: 50%;
+}
+
 /* TEXT STYLING */
 h1 {
   margin-top: 0;
@@ -83,6 +90,11 @@ p {
 .grid-content p {
   padding-top: 1rem;
   padding-right: 2rem;
+}
+
+figcaption {
+  margin-top: -0.5rem;
+  background-color: #1F1D23;
 }
 
 /* MEDIA QUERIES */
@@ -161,7 +173,7 @@ p {
     display: none;
   }
 
-  .grid-content p {
+  .grid-container {
     padding: 1rem 2rem;
   }
 }
@@ -172,6 +184,10 @@ p {
 
   h1 {
     margin-top: 2vh;
+  }
+
+  #scrollDownbtn {
+    display: block;
   }
 }
 @media screen and (min-width: 75rem) {
@@ -184,5 +200,9 @@ p {
     margin: 0 33.33% 0 33.33%;
     width: 33.33%;
     padding-top: 30vh;
+  }
+
+  #scrollDownbtn {
+    display: block;
   }
 }

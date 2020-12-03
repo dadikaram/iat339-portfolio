@@ -12,10 +12,6 @@ div h2, div h3, div h4, p {
   margin: 1rem 0 1rem 0;
 }
 
-ul, ol {
-  margin-left: -1.33rem;
-}
-
 /* ADJUSTING GRIDS */
 .grid-content {
   border: 1px solid grey;
@@ -27,6 +23,12 @@ ul, ol {
   background-color: #1F1D23;
   /* border: 1px solid grey; */
   border-radius: 5px;
+}
+
+/* ADJUSTING scrollUpbtn */
+#scrollUpbtn {
+  border: none;
+  margin: 0;
 }
 
 /* ADJUSTING FOOTER SECTION */
