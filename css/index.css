@@ -1,34 +1,30 @@
 /* BASIC CONTAINER STYLING */
-
 div {
   padding: 0;
   margin: 0;
 }
 
-
-
 /* LANDING STYLING */
-
 #landing {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: #1f1d23;
+  background-color: #1F1D23;
   /* background-image: url("../img/background-image.jpg");
   background-position:center;
   background-size: cover; */
 }
 
 #landinglogo {
-  margin: 0 25% 0 25%;
-  width: 50%;
-  padding-top: 60vh;
+  margin: 0 33.33% 0 33.33%;
+  width: 33.33%;
+  padding-top: 40vh;
   /* 25 for larger screens? */
   /* left: 25%;
   right: 25%; */
 }
 
-#landinglogo img{
+#landinglogo img {
   max-width: 100%;
   margin: 0;
 }
@@ -63,17 +59,21 @@ div {
   right: 2vw;
 }
 
-
-
+#menu-btn {
+  display: none;
+  top: 50vh;
+  left: 50%;
+}
 
 /* TEXT STYLING */
-
 h1 {
   margin-top: 0;
-  display: block;
+  /* position: absolute; */
+  /* left: 30%; */
+  /* display: inline; */
   text-align: center;
   color: #ffffff;
-  font-size: 4.4rem;
+  font-size: 4rem;
 }
 
 p {
@@ -85,16 +85,100 @@ p {
   padding-right: 2rem;
 }
 
-
 /* MEDIA QUERIES */
-
-@media screen and (min-width: 75rem){
-  h1 {
-    font-size: 5rem;
+@media screen and (max-width: 30rem) {
+  #landing {
+    max-height: 60vh;
   }
+
+  .deco {
+    width: auto;
+    max-height: 30vh;
+  }
+
+  #stars_left, #stars_right {
+    max-height: 20vh;
+  }
+
+  #stars_left {
+    left: 2rem;
+    margin-left: 1rem;
+  }
+
+  #stars_right {
+    right: 2rem;
+    margin-right: 1rem;
+  }
+
+  #landinglogo {
+    padding-top: 20vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #menu-btn {
+    display: inline;
+  }
+}
+@media screen and (min-width: 30rem) and (max-width: 50rem) {
+  #landing {
+    max-height: 60vh;
+  }
+
+  .deco {
+    width: auto;
+    max-height: 50vh;
+  }
+
+  #stars_left, #stars_right {
+    max-height: 30vh;
+  }
+
+  #stars_left {
+    left: 5rem;
+    margin-left: 1rem;
+  }
+
+  #stars_right {
+    right: 5rem;
+    margin-right: 1rem;
+  }
+
   #landinglogo {
     margin: 0 33.33% 0 33.33%;
     width: 33.33%;
-    padding-top: 20vh;
+    padding-top: 28vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 2vh;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 50rem) and (max-width: 75rem) {
+  #landinglogo {
+    padding-top: 55vh;
+  }
+
+  h1 {
+    margin-top: 2vh;
+  }
+}
+@media screen and (min-width: 75rem) {
+  h1 {
+    font-size: 5rem;
+    margin-top: 2vh;
+  }
+
+  #landinglogo {
+    margin: 0 33.33% 0 33.33%;
+    width: 33.33%;
+    padding-top: 30vh;
   }
 }

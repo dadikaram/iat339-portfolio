@@ -1,0 +1,76 @@
+$lightgrey: #F1F2F2;
+$darkgrey: #1F1D23;
+$teal: #507A69;
+$turquoise: #63C29C;
+
+/* BASIC CONTAINER STYLING */
+div {
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid #353535;
+  border-radius: 5px;
+}
+
+/* TEXT STYLING */
+div h2, div h3, div h4, p {
+  padding-left: 0rem;
+  margin: 1rem 0 1rem 0;
+}
+
+ul, ol {
+  margin-left: -1.33rem;
+}
+
+/* ADJUSTING GRIDS */
+.grid-content {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/* ADJUSTING FIGURES */
+  .styleguide-rendered figure {
+  background-color: $darkgrey;
+  /* border: 1px solid grey; */
+  border-radius: 5px;
+}
+
+
+/* ADJUSTING FOOTER SECTION */
+footer .grid-content {
+  border: none;
+  border-radius: 0;
+}
+
+/* ADJUSTING COPYRIGHT SECTION */
+#copyright {
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:30rem){
+    h1 {
+      font-size: 3.2rem;
+    }
+}
+
+
+@media screen and (min-width:50rem){
+
+  div {
+    margin: 1rem 10% 1rem 10%;
+    max-width: 75rem;
+  }
+}
+
+@media screen and (min-width:100rem){
+
+  div {
+    margin: 1rem 25% 1rem 25%;
+    max-width: 50%;
+  }
+
+}

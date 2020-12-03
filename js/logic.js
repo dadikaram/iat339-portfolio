@@ -1,5 +1,47 @@
 // use strict
 
+
+// Display the scrollUpbtn after the user has scrolled
+window.addEventListener('scroll', function() {
+  $('#scrollUpbtn').css("display", "block");
+});
+
+// Scroll to the top; activated when the scrollUpbtn is clicked
+function toTop() {
+  $('html, body').animate({scrollTop: 0});
+}
+
+
+
+var menu = 0; //0 = off
+
+function showMenu(){
+  if (menu===0){
+    $('.main-nav').css("display", "block");
+    $('.main-nav a').css("display", "block");
+    menu = 1;
+  } else if (menu===1){
+    $('.main-nav').css("display", "none");
+    menu = 0;
+  }
+}
+
+$(window).resize(function() {
+  if ($(window).width() >= 480) {
+    $('.main-nav').css("display", "flex");
+    $('.main-nav a').css("display", "inline-block");
+    menu = 0;
+  } else if($(window).width() <= 480) {
+    $('.main-nav').css("display", "none");
+    $('.main-nav a').css("display", "block");
+    menu = 0;
+  }
+});
+
+
+
+
+
 var currentImg = 0;
 
 function arrowClick(arrow, string){

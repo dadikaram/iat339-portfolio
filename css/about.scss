@@ -1,0 +1,51 @@
+$lightgrey: #F1F2F2;
+$darkgrey: #1F1D23;
+$teal: #507A69;
+$turquoise: #63C29C;
+
+/* BASIC CONTAINER STYLING */
+
+body {
+}
+
+div {
+  padding: 0;
+  margin: 0;
+  /* width: 100%; */
+  /* max-width: 100%; */
+}
+
+
+
+/* TEXT STYLING */
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+
+
+/* ADJUSTING GRIDS */
+
+div section.grid-content {
+  padding: 2rem 0rem;
+}
+
+.grid-content p {
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+
+
+/* SOCIAL MEDIA ICONS */
+
+.sm {
+  background-color: $darkgrey;
+  color: #ffffff;
+}
+
+.sm a {
+  margin: 2rem 0 0 3rem;
+}

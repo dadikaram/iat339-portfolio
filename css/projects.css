@@ -1,5 +1,4 @@
 /* BASIC CONTAINER STYLING */
-
 div {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@ div {
   margin-left: 10%;
   padding: 0.1rem;
   max-width: 40%;
-  background-color:rgba(255,255,255,0.35);
+  background-color: rgba(255, 255, 255, 0.35);
   border-radius: 5px;
 }
 
@@ -26,12 +25,7 @@ div section {
   margin-bottom: 10rem;
 }
 
-
-
-
-
 /* HEADER IMAGE STYLING */
-
 .page-header {
   width: 100;
   height: 60vh;
@@ -40,12 +34,12 @@ div section {
   background-size: cover;
 }
 
-#coco-header{
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url("../img/coco_landing3.png");
+#coco-header {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), url("../img/coco_landing3.png");
 }
 
 #nt-header {
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url("../img/noteteacher_final2.png");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), url("../img/noteteacher_final2.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -63,10 +57,7 @@ header h2 {
   color: #ffffff;
 }
 
-
-
 /* IMAGE STYLING */
-
 figure {
   max-width: 50%;
   margin: 0;
@@ -81,10 +72,7 @@ iframe {
   height: 30vh;
 }
 
-
-
 /* TEXT STYLING */
-
 h3 {
   display: block;
   width: 100%;
@@ -96,10 +84,7 @@ h3 {
   padding-left: 0;
 }
 
-
-
 /* FLOATING NAVIGATION FOR ANCHOR POINTS */
-
 #content-nav {
   position: fixed;
 }
@@ -115,7 +100,7 @@ h3 {
   margin-top: 5%;
   padding-left: 2rem;
   padding-bottom: 2rem;
-  background-color: #1f1d23;
+  background-color: #1F1D23;
   color: #ffffff;
 }
 
@@ -140,21 +125,16 @@ section.2a {
   color: #ffffff;
 }
 */
-
 /* .grid-container h4 {
   margin-left: -16%;
  } */
-
-
-
-
 /* MEDIA QUERIES */
-
-@media screen and (max-width: 30rem){
+@media screen and (max-width: 30rem) {
   div {
     max-width: 100%;
     left: 0;
   }
+
   div section {
     margin-bottom: 5rem;
   }
@@ -176,7 +156,7 @@ section.2a {
     padding-left: 1.5rem;
   }
 
-  figure{
+  figure {
     max-width: 100%;
     margin: 1.5rem;
   }
@@ -186,8 +166,7 @@ section.2a {
     padding: 0;
   }
 }
-
-@media screen and (max-width:40rem){
+@media screen and (max-width: 40rem) {
   .page-header {
     height: 40vh;
   }
