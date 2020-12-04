@@ -17,6 +17,10 @@ div h2, div h3, div h4, p {
   margin: 1rem 0 1rem 0;
 }
 
+ul {
+  margin-left: -2.66rem;
+}
+
 /* ADJUSTING GRIDS */
 .grid-content {
   border: 1px solid grey;
@@ -53,13 +57,14 @@ footer .grid-content {
 
 /* MEDIA QUERIES */
 
+/* Screen size below 480px */
 @media screen and (max-width:30rem){
     h1 {
       font-size: 3.2rem;
     }
 }
 
-
+/* Screen size above 800px */
 @media screen and (min-width:50rem){
 
   div {
@@ -68,6 +73,7 @@ footer .grid-content {
   }
 }
 
+/* Screen size above 1600px */
 @media screen and (min-width:100rem){
 
   div {

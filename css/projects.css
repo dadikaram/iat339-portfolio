@@ -85,32 +85,8 @@ h3 {
   padding-left: 0;
 }
 
-/* FLOATING NAVIGATION FOR ANCHOR POINTS */
-/*
-#art-direction figure.grid-content{
-  background-color: #ffffff;
-  color: #000000;
-}
-
-#art-direction section.grid-content, #animatic section.2b {
-  background-color: #1f1d23;
-  color: #ffffff;
-  margin: 0;
-}
-
-#storyboards, #animatic, #final {
-  height: 100%;
-}
-
-section.2a {
-  background-color: #1f1d23;
-  color: #ffffff;
-}
-*/
-/* .grid-container h4 {
-  margin-left: -16%;
- } */
 /* MEDIA QUERIES */
+/* Screen size below 480px */
 @media screen and (max-width: 30rem) {
   div {
     max-width: 100%;
@@ -148,6 +124,7 @@ section.2a {
     padding: 0;
   }
 }
+/* Screen size below 640px */
 @media screen and (max-width: 40rem) {
   .page-header {
     height: 40vh;
@@ -160,10 +137,9 @@ section.2a {
 
   .proj-desc {
     max-width: 80%;
-    /* margin-left: 0; */
   }
 }
-/* Screen size between 600px and 1200px */
+/* Screen size between 640px and 1200px */
 @media screen and (min-width: 40rem) and (max-width: 75rem) {
   .proj-desc {
     width: 60%;

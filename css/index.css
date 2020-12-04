@@ -1,7 +1,6 @@
 /* BASIC CONTAINER STYLING */
-div {
-  padding: 0;
-  margin: 0;
+#projects-preview .grid-container {
+  margin-bottom: 2rem;
 }
 
 /* LANDING STYLING */
@@ -88,7 +87,6 @@ p {
 }
 
 .grid-content p {
-  padding-top: 1rem;
   padding-right: 2rem;
 }
 
@@ -98,6 +96,7 @@ figcaption {
 }
 
 /* MEDIA QUERIES */
+/* Screen size below 480px*/
 @media screen and (max-width: 30rem) {
   #landing {
     max-height: 60vh;
@@ -133,7 +132,31 @@ figcaption {
   #menu-btn {
     display: inline;
   }
+
+  .grid-container {
+    margin: 0;
+  }
+
+  p {
+    padding-left: 0;
+  }
 }
+/* Screen size below 640px */
+@media screen and (max-width: 40rem) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure.grid-content {
+    order: 1;
+  }
+
+  section.grid-content {
+    order: 2;
+  }
+}
+/* Screen size between 480px and 800px */
 @media screen and (min-width: 30rem) and (max-width: 50rem) {
   #landing {
     max-height: 60vh;
@@ -177,6 +200,7 @@ figcaption {
     padding: 1rem 2rem;
   }
 }
+/* Screen size between 800px and 1200px */
 @media screen and (min-width: 50rem) and (max-width: 75rem) {
   #landinglogo {
     padding-top: 55vh;
@@ -190,6 +214,7 @@ figcaption {
     display: block;
   }
 }
+/* Screen size above 1200px */
 @media screen and (min-width: 75rem) {
   h1 {
     font-size: 5rem;
