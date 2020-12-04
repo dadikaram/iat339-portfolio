@@ -129,7 +129,7 @@ code {
 
 .main-nav a {
   display: inline-block;
-  flex-basis: 1;
+  flex-basis: auto;
   flex-grow: 1;
   background-color: #1F1D23;
   padding: 1rem;
